@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+            .menu {
+              background-color: black;
+            }
+            
+            .menu a::after{
+            content: '';
+            
+            width: 0%;
+            
+            height: 3px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            transition: 0.75s;
+            
+            }
+            .menu::after{
+            content: '';
+            
+            width:100%;
+            
+            height: 2px;
+            
+            
+            background: red;
+            
+            display: block;
+            margin: auto;
+            
+            }
+            .menu a:hover::after{
+             width: 100%;
+            }
+             .menu a:hover{
+               background-color: violet; font-size: x-large; 
+            }
+            
+            
+            </style>
+            </head>
+            <body style="background-color:#101820ff;
+            background-size: 100% 100%;margin: 0px">
+             
+                
+            <div class="menu">
+              <table style="background-color:black;" cellspacing="20">
+                    <tr>
+                   
+                        <td><a href="index.html"style="text-decoration:none"><span style="color: white; font-size: large";>HOME</span></a></td>
+                        <td><a href="about.html"style="text-decoration:none"><span style="color: white; font-size: large";>ABOUT US</span></a></td>
+                        <TD style="width:250px ;"> </TD>
+                     <td><a href="" style = "text-decoration: none"><span id="cr" style="color: white;font-size: x-large"></span></a></td>
+                        <TD style="width: 0px"> </TD>
+                        <td><img src="cart.PNG" alt="add to cart" usemap="#ac"><map name="ac"><area shape="rect" coords="0,0,159,72" href="../Add to cart/addcart.html"></map></td>
+                 </tr></table>
+                </div> 
+ <br> <br>
+    <center><table cellspacing="10" border="0">
+        <caption><span style="font-weight:bolder ;font-family:Arial;font-size: 50px;color: #f2aa4cff;">Inventory Items</span></caption>
+        <tr bgcolor="white"><th></th><th></th></tr>
+        <tr>
+            <td>
+                <img src="1.jpg" width="370px" height="370px" usemap="#s1">
+                <map name="s1">
+                <area shape="rect" coords="0,0,390,390" alt="Z Fold" href="ZFOLD.html">
+                </map>
+            </td>
+            <td>
+                <img src="2a.jpg" width="370px" height="370px" usemap="#s2">
+                <map name="s2">
+                <area shape="rect" coords="0,0,390,390" alt="M42" href="M42.html">
+                </map>
+            </td>
+            <td>
+                <img src="3.jpg" width="370px" height="370px" usemap="#s3">
+                <map name="s3">
+                <area shape="rect" coords="0,0,390,390" alt="F62" href="F62.html">
+                </map>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="4.jpg" width="370px" height="370px" usemap="#s4">
+                <map name="s4">
+                <area shape="rect" coords="0,0,390,390" alt="M51" href="M51.html">
+                </map>
+            </td>
+            <td>
+                <img src="5a.jpg"  width="370px" height="370px" usemap="#s5">
+                <map name="s5">
+                <area shape="rect" coords="0,0,390,390" alt="A72" href="A72.html">
+                </map>
+            </td>
+            <td>
+                <img src="6.jpg" width="370px" height="370px" usemap="#s10">
+                <map name="s10">
+                <area shape="rect" coords="0,0,390,390" alt="Gear S3" href="samsung gear s3.html">
+                </map>
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                <img src="8.jpg" width="370px" height="370px" usemap="#s6">
+                <map name="s6">
+                <area shape="rect" coords="0,0,390,390" alt="TAB A7" href="samsung oh no.html">
+                 </map> 
+            </td>
+        </tr>
+    </table>
+    </center>
+   </body>
+   <script>
+    var users=localStorage.getItem("currentName")
+    document.getElementById("cr").innerHTML = "Hello, " + users
+</script>
+</html>

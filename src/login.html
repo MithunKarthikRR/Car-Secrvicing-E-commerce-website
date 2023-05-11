@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<script>
+ function validation(){
+     username= document.getElementById("username").value
+     password= document.getElementById("password1").value
+     var users=localStorage.getItem("users")
+    var user=JSON.parse(users||"[]")
+    localStorage.setItem("currentUser","")
+    var check = false
+    for(i=0;i<user.length;i++)
+        {
+            if (user[i].username===username && user[i].password1===password1){
+                localStorage.setItem("currentUser",username)
+                localStorage.setItem("currentName",user[i].name)
+                check = true
+                return true
+            }
+        }
+        if (check == false){
+            localStorage.setItem("currentUser","")
+            alert("Invalid Credentials")
+            return false
+        }
+
+        }
+
+</script>
+
+<body>
+    <div class="form" >
+    <p><b>LOGIN</b></p>
+    <form  onsubmit="return validation()" action= "" method="POST" >
+    
+        <input required name="username" type="text" id="username" placeholder="Customer ID">
+        <input required name="password1"type="password" id="password1" placeholder="password">
+        <button required name="rohith" type ="submit">Login</button>
+        <p class="message">Not registered? <a href="Sign up.html">Create an account</a></p>
+    </form>
+    </div>
+</body>
+
+</html>
+

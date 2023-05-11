@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Inventory</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Nav -->
+<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+    <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+        <a href="Bill.php"><button class="btn btn-primary">BILL</button></a>
+    </div>
+    <a href="index.html">HOME PAGE</a>
+</nav>
+
+
+<!-- Main -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="1.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Car freshner</h4>
+    <p class="card-text">Price: ₹400</p>
+    <a href="#" data-name="CarFreshner" data-price="400.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count1">0</span></p>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="2a.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Seat cover</h4>
+    <p class="card-text">Price: ₹7,000</p>
+    <a href="#" data-name="SeatCover" data-price="7000.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count2">0</span></p>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="3.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">GPS tracker</h4>
+    <p class="card-text">Price: ₹1,000</p>
+    <a href="#" data-name="GPSTracker" data-price="1000" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count3">0</span></p>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="row">
+<div class="col">
+    <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="4.jpg" alt="Card image cap">
+<div class="card-block">
+<h4 class="card-title">Blind spot mirror</h4>
+<p class="card-text">Price: ₹249</p>
+<a href="#" data-name="BlindSpotMirror" data-price="249.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count4">0</span></p>
+</div>
+</div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="5a.jpg" alt="Card image cap">
+<div class="card-block">
+<h4 class="card-title">Tire repair kit</h4>
+<p class="card-text">Price: ₹399</p>
+<a href="#" data-name="TireRepairKit" data-price="399.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count5">0</span></p>
+</div>
+</div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="6.jpg" alt="Card image cap">
+<div class="card-block">
+<h4 class="card-title">Reverse sensor</h4>
+<p class="card-text">Price: ₹651</p>
+<a href="#" data-name="ReverseSensor" data-price="651.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count6">0</span></p>
+</div>
+</div></div></div>
+<div class="row">
+<div class="col">
+    <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="7.jfif" alt="Card image cap">
+<div class="card-block">
+<h4 class="card-title">Body cover</h4>
+<p class="card-text">Price: ₹1,500</p>
+<a href="#" data-name="BodyCover" data-price="1500.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count7">0</span></p>
+</div>
+</div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="8.jpg" alt="Card image cap">
+<div class="card-block">
+<h4 class="card-title">Car vaccum cleaner</h4>
+<p class="card-text">Price: ₹799</p>
+<a href="#" data-name="CarVaccumCleaner" data-price="799.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count8">0</span></p>
+</div>
+</div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="9.jpg" alt="Card image cap">
+<div class="card-block">
+<h4 class="card-title">Car mat</h4>
+<p class="card-text">Price: ₹339</p>
+<a href="#" data-name="CarMat" data-price="339.0" class="add-to-cart btn btn-primary">Add to cart</a><br><p>Quantity: <span class="count9">0</span></p>
+</div>
+</div>
+      </div>
+    </div>
+</div>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+        </table>
+        <div>Total price: ₹<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="reb">Order now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+  <script>
+    document.getElementById("reb").onclick=function(){
+      location.href="Bill.html";
+    }
+  </script>
+
+</body>
+</html>
